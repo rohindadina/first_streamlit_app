@@ -52,8 +52,7 @@ except URLError as e:
 # Output to screen as table
 
 
-#dont run this
-streamlit.stop()
+
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
